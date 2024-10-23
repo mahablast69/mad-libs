@@ -1,0 +1,36 @@
+body {
+    background-image: url('https://th.bing.com/th/id/R.9fde5151d1ee1f40681929e16e6f2337?rik=s8z2Y6rZB9bkQg&pid=ImgRaw&r=0');
+    background-size: cover; 
+    background-position: top;
+    margin-top: 20%;
+    background-repeat: no-repeat; 
+}
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #2c2c2c;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: orange;
+            text-shadow: 2px 2px 5px black;
+        }
+        button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #cc5200;
+        }
+        .story {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }

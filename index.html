@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Mad Libs</title>
+    <style>
+        body {
+    background-image: url('https://media.giphy.com/media/hq2jCljBgW5pe/giphy.gif');
+    background-size: cover; 
+    background-position: center;
+    margin-top: 2%;
+    background-repeat: no-repeat; 
+}
+        body {
+            font-family: 'Creepster';
+            background-color: #2c2c2c;
+            color: rgb(255, 255, 255);
+            text-shadow: 10px 10px 5px rgb(20, 0, 0);
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: orange;
+            text-shadow: 5px 5px 3px rgb(0, 0, 0);
+        }
+        button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #cc5200;
+        }
+        .story {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+    </style>
+    <script>
+        function playMadLibs() {
+            const adjective1 = prompt("Enter an adjective:");
+            const noun1 = prompt("Enter a noun:");
+            const verb1 = prompt("Enter a verb:");
+            const adjective2 = prompt("Enter another adjective:");
+            const noun2 = prompt("Enter another noun:");
+            const place = prompt("Enter a place:");
+            const number = prompt("Enter a number:");
+            const exclamation = prompt("Enter an exclamation!");
+
+            const story = ` 
+                On Halloween night, Sanvi and GianLuca went on a mission for candy and saw a ${adjective1} ${noun1} 
+                that started to ${verb1} in a ${adjective2} way! It was holding a ${noun2} and dancing around in ${place}. 
+                She told GianLuca, "I couldn't believe my eyes!" GianLuca quickly counted to ${number} and shouted, 
+                "${exclamation}!" What a spooky night! 
+            `;
+
+            // Display the story on the page
+            document.body.innerHTML = `
+                <h1>Your Halloween Story</h1>
+                <p class="story">${story}</p>
+                <button onclick="location.reload()">Play Again</button>
+            `;
+        }
+    </script>
+</head>
+<body>
+    <h1>Halloween Mad Libs</h1>
+    <button onclick="playMadLibs()">Play Mad Libs!</button>
+</body>
+</html>
